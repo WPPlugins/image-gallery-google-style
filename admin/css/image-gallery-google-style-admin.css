@@ -1,0 +1,16 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+ 
+.setting span.iggs-gallery-setting-text {
+	text-align: left;
+	font-size: .75em;
+}
+.media-sidebar .setting input[type=text].iggs-gallery-setting-input {
+	float: left;
+	width: 4em;
+}
+.setting hr {
+	width: 100%;
+}

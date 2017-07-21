@@ -1,0 +1,126 @@
+/**
+* All of the CSS for your public-facing functionality should be
+* included in this file.
+*/
+
+/* general css */
+html {
+	overflow-y: scroll;	/* to ensure the page width remains consistent for grid row width calculations */
+}
+.iggs-group:after {
+	display: block;
+	height: 0;
+	clear: both;
+	content: ".";
+	visibility: hidden; /* For clearing */
+}
+
+/* iggs-grid css */
+.iggs-grid {
+	padding: 0 0 0 0;
+	list-style: none;
+	/*color: #999999;*/
+	width: 100%;
+	line-height: 0;
+	/*text-align: center;*/
+}
+.iggs-grid li {
+	display: inline-block;
+	zoom: 1;
+	margin: 5px 5px 0 0;
+	padding: 0 0 0 0;
+}
+.iggs-grid li:first-child {
+	display: none;
+}
+.iggs-grid #iggs-thumb-grid-panel li:first-child {
+	display: inline-block;
+}
+.iggs-grid li a {
+	display: block;
+}
+.iggs-grid-thumb {
+	height: 250px;
+	width: auto;
+	margin: 0 0 0 0;
+}
+#iggs-thumb-grid-panel {
+	margin: 5px 8px 0 0;
+	padding: 10px 0 10px 0;
+	line-height: 1.6em;
+}
+#iggs-thumb-grid-panel #iggs-controls {
+	margin: 0 0 .4em 0;
+	text-align: right;
+}
+#iggs-thumb-grid-panel .iggs-icon {
+	font-size: 1.5em;
+	cursor: pointer;
+	-webkit-user-select: none;  
+	-moz-user-select: none;    
+	-ms-user-select: none;      
+	user-select: none;	
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-ms-box-shadow: none;
+	box-shadow: none;
+}
+#iggs-thumb-grid-panel .iggs-icon:hover {
+	opacity: 0.5;
+}
+.iggs-panel-left {
+	display: inline-block;
+	max-width: 69%;
+	vertical-align: top;
+}
+.iggs-panel-left.vertical {
+	max-width: 45%;
+}
+.iggs-panel-left.full-width {
+	max-width: 100%;
+}
+#iggs-thumb-grid-panel img {
+	visibility: hidden;
+}
+.iggs-panel-right {
+	display: inline-block;
+	padding: 0 0 0 2%;
+	width: 29%;
+}
+.iggs-panel-right.vertical {
+	width: 53%;
+}
+#iggs-thumb-grid-panel img {
+	max-height: 100%;
+	max-width: 100%;
+}
+#iggs-thumb-grid-panel h1 {
+	line-height: 1.1em;
+}
+#iggs-thumb-grid-panel p {
+	line-height: 1.4;
+}
+/* tablet horizontal */
+@media (max-width: 1024px) {
+}
+/* tablet vertical */
+@media (max-width: 768px) {
+	.iggs-panel-left,
+	.iggs-panel-left.vertical {
+		display: block;
+		max-width: 100%;
+	}
+	.iggs-panel-right,
+	.iggs-panel-right.vertical {
+		display: block;
+		margin: .4em 0 0 0;
+		padding: 0 0 0 0;
+		width: 100%;
+	}
+}
+/* mobile horizontal */
+@media (max-width: 540px) {
+}
+/* mobile vertical */
+@media (max-width: 320px) {
+}
